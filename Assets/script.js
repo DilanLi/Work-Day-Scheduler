@@ -31,10 +31,7 @@ function saveTodo(){
         var value = $("textarea").eq(i).val();
         var hour = $(".hour").eq(i).data("hour");
         localStorage.setItem(hour, value);
-    
-        var todo = localStorage.getItem(hour);
-        $("textarea").eq(i).text(todo);
-    }    
+        }    
 }
 
 //this function grabs all saved events in local storage and displays them
