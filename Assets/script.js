@@ -1,11 +1,20 @@
 $(document).ready(function() {
 
     //use moment.js library to display day of week and date
-    var currentDay = moment().format("MMMM Do YYYY");
+    var currentDay = moment().format('MMMM Do YYYY');
+    var currentTime = moment().format('h:mm:ss a');
     var currentDayOfWeek = moment().format("dddd");
     var currentInfo = currentDayOfWeek + ", " + currentDay;
     $("#currentDay").text(currentInfo);
+    $("#currentTime").text(currentTime);
     
+    function updateTime(){
+        currentTime = moment().format('h:mm:ss a');
+        $("#currentTime").text(currentTime);
+    }
+
+    setInterval(updateTime, 1000);
+
     //grab value of current hour from moment.js library
     var currentHour = moment().hours();
 
