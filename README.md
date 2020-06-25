@@ -8,9 +8,6 @@ This is a simple day planner application for business employees to better organi
 ## Link to Application
 https://dilanli.github.io/Work-Day-Scheduler/
 
-## Display/ Interface
-This is meant to be a browser based app. The target devices for this application are office desktops or laptops. 
-
 ## Developing Process
 - The application tracks time and date dynamically by using the moment.js library.
 - Data attributes are given to each hour to match with current hour in moment.js library, this will determine if an event is past, current, or future.
